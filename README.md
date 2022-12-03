@@ -1,23 +1,3 @@
-Portfolio-Project
-
-📗Table of Contents
-
-📖 About the Project
-🛠 Built With
-Tech Stack
-Key Features
-💻 Getting Started
-Prerequisites
-Setup
-Usage
-👥 Authors
-👥 Future Features
-🤝 Contributing
-🙏 Acknowledgements
-📝 License
-📖 [Portfolio Project]
-
-
 [Portfolio Website] is a designed to showcase my work and let others know about myself. 
 
 🛠 Built 
