@@ -1,44 +1,91 @@
-📖 [Microverse_Portfolio]
+Portfolio-Project
 
-Describe your project in 1 or 2 sentences.
+📗Table of Contents
+
+📖 About the Project
+🛠 Built With
+Tech Stack
+Key Features
+💻 Getting Started
+Prerequisites
+Setup
+Usage
+👥 Authors
+👥 Future Features
+🤝 Contributing
+🙏 Acknowledgements
+📝 License
+📖 [Portfolio Project]
+
+
 [Microverse_Portfolio] is a designed to showcase my work and let others know about myself.
 
-🛠 Built With
-html and css
+🛠 Built With html and css
 
 Tech Stack
 
+Client
+[A html file with header section and headline section].
+[A css file that styles that styled both section and add background image to the page].
+[An md file required to be read].
 
-
-Describe between 1-3 key features of the application.
-[A html file with header section and headline section]
-[A css file that styles that styled both section and add background image to the page]
-
-🚀 Live Demo
-https://github.com/kingnoel/microverse_portfolio
 
 💻 Getting Started
-
 Access the repo, and run the index.html file.
 
-Prerequisites
-A computer, preferrably a mobile device since this is a mobile first website.
 
-👥 Authors
-Kingnoel
+Prerequisites
+In order to run this project you need:
+
+A Browser
+
+Setup
+
+Clone this repository to your desired folder:
+
+git@github.com:kingnoel/microverse_portfolio.git
+
+Install
+
+Get this project installed using: A commandline interface such as Gitbash
+
+Usage
+
+To run the project, execute the following command:
+
+Execute the following command to run this project: Turn on your live server from your IDE
+
+👥 Author
+King Immanuel
 
 GitHub: @kingnoel
 LinkedIn: King Immanuel
+(back to top)
 
-🔭 Future Features
+Future Features
 
-Describe 1 - 3 features you will add to the project.
- [My name]
- [My Biography]
+A Contact me section
+(back to top)
 
+🤝 Contributing Contributions, issues, and feature requests are welcome!
+
+(back to top)
 
 🙏 Acknowledgments
 
-Trevor, Crispin, Uche, Rachel, Hana, Anna, Queen and all microverse team
-(back to top)
+🙏 Acknowledgments Give credit to everyone who inspired your codebase.
+
+A big thank you to Microverse including the students and the various communities.
+Special thanks to Trevor, Crispin, Uche, Rachel, Hana, Anna, Queen and all microverse team.
+
+📝 License
+
+
+📝 License This project is MIT licensed.
+
+
+
+
+
+
 
