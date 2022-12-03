@@ -18,9 +18,11 @@ Usage
 📖 [Portfolio Project]
 
 
-[Microverse_Portfolio] is a designed to showcase my work and let others know about myself.
+[Portfolio Website] is a designed to showcase my work and let others know about myself. 
 
-🛠 Built With html and css
+🛠 Built 
+HTML
+CSS
 
 Tech Stack
 
@@ -31,36 +33,33 @@ Client
 
 
 💻 Getting Started
-Access the repo, and run the index.html file.
-
-
-Prerequisites
-In order to run this project you need:
-
-A Browser
-
-Setup
-
+To get a local working copy, follow these steps:
 Clone this repository to your desired folder:
 
 git@github.com:kingnoel/microverse_portfolio.git
+Run this command cd microverse_portfolio
+Open in browser
 
-Install
+Prerequisites
+To run this project, you need:
+A Web browser
+A terminal or text editor
 
-Get this project installed using: A commandline interface such as Gitbash
 
-Usage
+Run tests
 
-To run the project, execute the following command:
+You can run tests by following these steps:
 
-Execute the following command to run this project: Turn on your live server from your IDE
+Commit and push your changes
+Goto to pull request
+I created a pull request that successfully runs linters or you could simply create your own pull request.
+
 
 👥 Author
 King Immanuel
 
 GitHub: @kingnoel
 LinkedIn: King Immanuel
-(back to top)
 
 Future Features
 
@@ -69,9 +68,6 @@ A Contact me section
 
 🤝 Contributing Contributions, issues, and feature requests are welcome!
 
-(back to top)
-
-🙏 Acknowledgments
 
 🙏 Acknowledgments Give credit to everyone who inspired your codebase.
 
