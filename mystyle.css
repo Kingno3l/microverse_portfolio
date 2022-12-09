@@ -475,3 +475,25 @@ For small, less significant text and placeholders.
   background-color: white;
   color: #6070ff;
 }
+
+.buttonaction:enabled {
+  color: #6070ff;
+  background-color: white;
+  border: 1px solid #6070ff;
+}
+
+.buttonaction:disabled {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  color: #5e6c84;
+}
+
+.buttonaction:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.buttonaction:hover {
+  background-color: #6070ff;
+  color: white;
+}
