@@ -342,9 +342,9 @@ For small, less significant text and placeholders.
   border-top-right-radius: 5rem;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding: 5rem 2rem;
   justify-content: center;
+  height:150vh;
+  padding: 0 2rem;
 }
 
 .contactsession p {
