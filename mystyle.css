@@ -344,6 +344,8 @@ For small, less significant text and placeholders.
   font-size: 40px;
   line-height: 52px;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-end;
 }
 
 .aboutbody {
