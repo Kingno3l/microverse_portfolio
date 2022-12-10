@@ -343,7 +343,7 @@ For small, less significant text and placeholders.
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height:150vh;
+  height: 150vh;
   padding: 0 2rem;
 }
 
