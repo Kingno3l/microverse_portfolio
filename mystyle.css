@@ -246,7 +246,7 @@ For small, less significant text and placeholders.
 }
 
 .frame2 {
-  display: flex;
+  float: left;
   flex-direction: row;
   padding: 0;
   gap: 12px;
