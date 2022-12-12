@@ -268,7 +268,7 @@ For small, less significant text and placeholders.
 }
 
 .tag {
-  display: flex;
+  display: inline-block;
   flex-direction: row;
   align-items: center;
   padding: 4px 12px;
