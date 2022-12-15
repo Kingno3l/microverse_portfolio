@@ -467,7 +467,6 @@ For small, less significant text and placeholders.
   background-color: white;
 }
 
-
 /* media */
 @media (min-width: 768px) {
   .headclass {
