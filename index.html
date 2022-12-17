@@ -23,7 +23,14 @@
             <header>
                 <nav class="flex-container">
                     <div class="logo-div">My Logo</div>
-                    <div class="hamburger_icon"> <img src="img/hamburger-menu-icon.webp" width="20">
+                    <div class="hamburger_icon mobile"> <img src="img/hamburger-menu-icon.png" width="20">
+                    </div>
+                    <div class="desktop">
+                        <ul class="navlink">
+                            <li>Portfolio</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                        </ul>
                     </div>
                 </nav>
             </header>
@@ -55,12 +62,17 @@
         <section class="gridclass">
 
             <section class="cardone">
-                <img src="img/Snapshoot Portfolio-2.png" alt="">
-                <div>
+                <div class="imagefit">
+                    <img class="mobile" src="img/Snapshoot Portfolio-2.png" alt="">
+                    <img class="desktop" src="img/Snapshoot Portfolio 1.png" alt="">
+                </div>
+                <div class="desktoptext">
 
                     <h1 class="cardonept">
                         Tonic
                     </h1>
+
+
                     <div class="pconeup">
                         <ul class="frame2">
                             <li id="listid"> CANOPY </li>
@@ -92,13 +104,66 @@
             </section>
 
             <section class="cardone inverse">
-                <img src="img/Snapshoot Portfolio-3.png" alt="">
-                <div>
+                <div class="imagefit">
+                    <img class="mobile" src="img/Snapshoot Portfolio-3.png" alt="">
+                    <img class="desktop" src="img/Snapshoot Portfolio 2.png" alt="">
+
+                </div>
+                <div class="desktoptext">
                     <h1 class="cardonept">
                         Multi-Post
                         Stories
                     </h1>
 
+                    <div class="pconeup">
+                        <ul class="frame2">
+                            <li id="listid"> CANOPY </li>
+                            <!-- <img src="img/Counter.png" alt=""> -->
+                            <li class="lineitem">Back End Dev</li>
+                            <!-- <img src="img/Counter.png" alt=""> -->
+                            <li class="lineitem">2015</li>
+
+                        </ul>
+
+                        <p class="tagtext mobile">
+                            A daily selection of privately personalized reads; no accounts or sign-ups required.
+                        </p>
+
+                        <p class="tagtext desktop">
+                            Experimental content creation feature that allows users to add to an existing story over the
+                            course of a day without spamming their friends.</p>
+
+                        <ul class="frame2">
+                            <li class="tag">html </li>
+                            <li class="tag desktop">Ruby on rails</li>
+                            <li class="tag">css</li>
+                            <li class="tag">javaScript</li>
+                        </ul>
+
+                        <div>
+                            <div class="action">
+                                <button class="buttonaction">See Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </section>
+
+
+            <section class="cardone">
+                <div class="imagefit">
+                    <img class="mobile" src="img/Snapshoot Portfolio-5.png" alt="">
+                    <img class="desktop" src="img/Snapshoot Portfolio 3.png" alt="">
+
+                </div>
+                <div>
+                    <h1 class="cardonept">
+                        Multi-Post
+                        Stories
+                    </h1>
                     <div class="pconeup">
                         <ul class="frame2">
                             <li id="listid">CANOPY</li>
@@ -130,75 +195,40 @@
 
             </section>
 
-
-            <section class="cardone">
-                <img src="img/Snapshoot Portfolio-5.png" alt="">
-                <div>
-                    <h1 class="cardonept">
-                        Multi-Post
-                        Stories
-                    </h1>
-                    <div class="pconeup">
-                    <ul class="frame2">
-                        <li id="listid">CANOPY</li>
-                        <!-- <img src="img/Counter.png" alt=""> -->
-                        <li class="lineitem">Back End Dev</li>
-                        <!-- <img src="img/Counter.png" alt=""> -->
-                        <li class="lineitem">2015</li>
-                    </ul>
-
-                    <p class="tagtext">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-
-                    <ul class="frame2">
-                        <li class="tag">html </li>
-                        <li class="tag">css</li>
-                        <li class="tag">javaScript</li>
-                    </ul>
-
-                    <div>
-                        <div class="action">
-                            <button class="buttonaction">See Project</button>
-                        </div>
-                    </div>
-                </div>
-                </div>
-
-
-
-            </section>
-
             <section class="cardone inverse">
-                <img src="img/Snapshoot Portfolio-2.png" alt="">
+                <div class="imagefit">
+                    <img class="mobile" src="img/Snapshoot Portfolio-2.png" alt="">
+                    <img class="desktop" src="img/Snapshoot Portfolio 4.png" alt="">
+
+                </div>
                 <div>
                     <h1 class="cardonept">
                         Tonic
                     </h1>
                     <div class="pconeup">
-                    <ul class="frame2">
-                        <li id="listid">CANOPY</li>
-                        <!-- <img src="img/Counter.png" alt=""> -->
-                        <li class="lineitem">Back End Dev</li>
-                        <!-- <img src="img/Counter.png" alt=""> -->
-                        <li class="lineitem">2015</li>
-                    </ul>
+                        <ul class="frame2">
+                            <li id="listid">CANOPY</li>
+                            <!-- <img src="img/Counter.png" alt=""> -->
+                            <li class="lineitem">Back End Dev</li>
+                            <!-- <img src="img/Counter.png" alt=""> -->
+                            <li class="lineitem">2015</li>
+                        </ul>
 
-                    <p class="tagtext">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required. </p>
+                        <p class="tagtext">
+                            A daily selection of privately personalized reads; no accounts or sign-ups required. </p>
 
-                    <ul class="frame2">
-                        <li class="tag">html </li>
-                        <li class="tag">css</li>
-                        <li class="tag">javaScript</li>
-                    </ul>
+                        <ul class="frame2">
+                            <li class="tag">html </li>
+                            <li class="tag">css</li>
+                            <li class="tag">javaScript</li>
+                        </ul>
 
-                    <div>
-                        <div class="action">
-                            <button class="buttonaction">See Project</button>
+                        <div>
+                            <div class="action">
+                                <button class="buttonaction">See Project</button>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
 
 
@@ -206,41 +236,36 @@
             </section>
         </section>
 
-
-
-
-
-
         <section class="about">
             <main id="main">
-            <h1 class="aboutheader">
-                About
-                <br>
-                Myself
-            </h1>
-            <p class="aboutbody">Hello I’m a software developer! I can help you build a product , feature or
-                website
-                Look through some of my work and experience! If you like what you see and have a project you need
-                coded,
-                don’t hestiate to contact me.
-            </p>
+                <h1 class="aboutheader">
+                    About
+                    <br>
+                    Myself
+                </h1>
+                <p class="aboutbody">Hello I’m a software developer! I can help you build a product , feature or
+                    website
+                    Look through some of my work and experience! If you like what you see and have a project you need
+                    coded,
+                    don’t hestiate to contact me.
+                </p>
 
-            <a href="microverse.org" class="connect">LET’S CONNECT</a>
+                <a href="microverse.org" class="connect">LET’S CONNECT</a>
 
-            <ul class="flex-contain">
-                <li><a href="microverse.org" class="item"><img src="img/svg/Vector-5.svg" /></a></li>
-                <li><a href="microverse.org"><img src="img/svg/Vector-6.svg" /></a></li>
-                <li><a href="microverse.org" class="item"><img src="img/svg/Vector-7.svg" /></a></li>
-                <li><a href="microverse.org" class="item"><img src="img/svg/Vector-8.svg" /></a></li>
-                <li><a href="microverse.org" class="item"><img src="img/svg/Vector-9.svg" /></a></li>
-                <li><a href="microverse.org" class="item"><img src="img/svg/Vector-10.svg" /></a></li>
-            </ul>
+                <ul class="flex-contain">
+                    <li><a href="microverse.org" class="item"><img src="img/svg/Vector-5.svg" /></a></li>
+                    <li><a href="microverse.org"><img src="img/svg/Vector-6.svg" /></a></li>
+                    <li><a href="microverse.org" class="item"><img src="img/svg/Vector-7.svg" /></a></li>
+                    <li><a href="microverse.org" class="item"><img src="img/svg/Vector-8.svg" /></a></li>
+                    <li><a href="microverse.org" class="item"><img src="img/svg/Vector-9.svg" /></a></li>
+                    <li><a href="microverse.org" class="item"><img src="img/svg/Vector-10.svg" /></a></li>
+                </ul>
 
-            <div>
-                <div class="action">
-                    <button class="buttonaction">Get my resume</button>
+                <div>
+                    <div class="action">
+                        <button class="buttonaction">Get my resume</button>
+                    </div>
                 </div>
-            </div>
             </main>
             <ul class="languager">
                 <li>
@@ -282,18 +307,25 @@
 
     <footer class="whitesession">
         <section class="contactsession">
-            <h1>Contact me</h1>
-            <p>If you have an application you are interested in developing, a feature that you need built or a project
-                that
-                needs coding. I&apos;d love to help with it </p>
+            <div class="footerdiv">
+                <h1>Contact me</h1>
+                <p>If you have an application you are interested in developing, a feature that you need built or a
+                    project
+                    that
+                    needs coding. I&apos;d love to help with it </p>
+                <div class="centerform">
 
-            <form action="https://formspree.io/f/mbjbnebv" method="post">
-                <input type="text" name="name" placeholder="Enter name" maxlength="30" required>
-                <input type="email" name="email" placeholder="Enter email" required>
-                <textarea name="message" placeholder="Write your message here" maxlength="500" required></textarea>
-                <div class="btnn">
-                <button type="submit" class="buttonaction">Get In Touch</button></div>
-            </form>
+                    <form action="https://formspree.io/f/mbjbnebv" method="post">
+                        <input type="text" name="name" placeholder="Enter name" maxlength="30" required>
+                        <input type="email" name="email" placeholder="Enter email" required>
+                        <textarea name="message" placeholder="Write your message here" maxlength="500"
+                            required></textarea>
+                        <div class="btnn">
+                            <button type="submit" class="buttonaction">Get In Touch</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
     </footer>
 
