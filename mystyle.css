@@ -19,8 +19,13 @@ body {
 
 .flex-container {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   list-style: none;
   padding: 2rem;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .item {
@@ -38,6 +43,11 @@ body {
   background-repeat: no-repeat;
   border-bottom-right-radius: 6rem;
   background-color: white;
+  margin-bottom: 1rem;
+}
+
+.contactsession h1,
+p {
   margin-bottom: 1rem;
 }
 
@@ -80,7 +90,6 @@ body {
   bottom: 50%;
 
   /* Base / 300 - Tertiary
-
 For small, less significant text and placeholders.
 */
   border: 2px solid #fff;
@@ -140,6 +149,12 @@ For small, less significant text and placeholders.
   flex-grow: 0;
 }
 
+.navlink {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
 .connect {
   /* Body / 2 - Bolder */
   font-family: 'Poppins', sans-serif;
@@ -181,7 +196,6 @@ For small, less significant text and placeholders.
   /* Auto layout */
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 16px;
   gap: 12px;
   height: fit-content;
@@ -216,13 +230,14 @@ For small, less significant text and placeholders.
 
 .cardonept {
   width: 295px;
-  height: 36px;
+
+  /* height: 36px; */
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  margin-bottom: 1rem;
+  margin: 1.5rem 0;
 
   /* or 138% */
 
@@ -440,17 +455,6 @@ For small, less significant text and placeholders.
   resize: none;
 }
 
-.contactsession button {
-  padding: 13px;
-  outline: none;
-  font-size: 18px;
-  font-family: 'Poppins', sans-serif;
-  border: none;
-  border-radius: 7px;
-  background-color: white;
-  color: #6070ff;
-}
-
 .buttonaction:enabled {
   color: #6070ff;
   background-color: white;
@@ -475,4 +479,150 @@ For small, less significant text and placeholders.
 
 .whitesession {
   background-color: white;
+}
+
+.desktop {
+  display: none;
+}
+
+/* media */
+@media (min-width: 768px) {
+  .headclass {
+    background-image: url("img/header-shapes\ mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    /* padding: 0 260px; */
+
+    /* padding-top: 260px;
+    padding-bottom: 260px;
+    /* background-position: center; */
+
+    /* padding-left: 6rem;
+    padding-right: 6rem; */
+    padding: 15rem;
+  }
+
+  .headclass h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .headclass p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  .section_class {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 6rem;
+  }
+
+  .gridclass {
+    margin: 70px auto;
+    grid-gap: 100px;
+  }
+
+  .cardone {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .imagefit img {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .inverse {
+    flex-direction: row-reverse;
+  }
+
+  .cardonept {
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: -4rem;
+  }
+
+  .imagefit {
+    width: 50%;
+  }
+
+  /* .pconeup,
+  .cardonept {
+    padding: 0 2rem;
+    width: 100%;
+  } */
+
+  .about {
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* padding: 10rem; */
+    align-items: center;
+  }
+
+  .languager {
+    width: 150%;
+  }
+
+  .languager .dropdown li,
+  .languager li:first-child {
+    border-bottom: none;
+  }
+
+  .about,
+  #main {
+    width: 100%;
+    padding: 0 5rem;
+  }
+
+  .languager .dropdown li {
+    width: 20%;
+    display: block;
+  }
+
+  .dropdown {
+    display: flex;
+    gap: 10px;
+  }
+
+  .contactsession {
+    padding: 5rem 20rem;
+    background-size: 100%;
+    background-image: url("img/contact form background shapes@2x.png");
+  }
+
+  .btnn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .desktoptext {
+    width: 50%;
+  }
+
+  .mobile {
+    display: none;
+    list-style: none;
+  }
+
+  .desktop {
+    display: block;
+    list-style: none;
+  }
+
+  .overflow {
+    overflow-wrap: break-word;
+  }
+
+  .footerdiv {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
