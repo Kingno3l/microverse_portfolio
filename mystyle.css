@@ -17,6 +17,34 @@ body {
   margin: 1rem 0;
 }
 
+@keyframes left {
+  0%{
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+  80% {
+      transform: translateX(10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+@keyframes right {
+  0%{
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  80% {
+      transform: translateX(-10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -108,7 +136,9 @@ For small, less significant text and placeholders.
 .section_head {
   /* Primary Text */
   margin-bottom: 1rem;
-
+  animation-name: left; 
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
   /* Header / 2 */
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -137,7 +167,9 @@ For small, less significant text and placeholders.
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 1rem;
-
+  animation-name: right;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
   /* or 150% */
 
   /* Neutrals/N600 */
@@ -534,7 +566,39 @@ For small, less significant text and placeholders.
   .imagefit img {
     width: 100%;
     padding: 1rem;
+    transition: transform .3s;
+
   }
+
+  .imagefit img:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+
+  .btntrans{
+    transition: all .5s;
+  }
+
+  .btntrans:hover{
+    color:#6070ff;
+    background: rgb(255 245 225);
+    border: 1px solid#6070ff;  
+  }
+
+  .btntrans:active {
+    background-color: #6070ff;
+    color: rgb(244 241 240);
+  }
+  
+  .btntrans:disabled {
+    background: #f4f1f0;
+    color: #5b5957;
+  }
+  
+  .btntrans:enabled {
+    color: white;
+    background-color: #6070ff;
+  }
+
 
   .inverse {
     flex-direction: row-reverse;
