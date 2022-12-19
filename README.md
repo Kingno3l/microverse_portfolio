@@ -99,8 +99,9 @@ This portfolio project is a designed to showcase my work and let others know abo
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-This project is not deployed yet
+> Add a link to your deployed project.
 
+- [Live Demo Link](https://kingnoel.github.io/microverse_portfolio/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
