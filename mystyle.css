@@ -626,10 +626,12 @@ For small, less significant text and placeholders.
     align-items: center;
   }
 }
+
 /* ---------------------------------------------------accessibility features ------------------------------------------------------------------------------ */
-label{
+label {
   display: none;
 }
+
 .skip {
   position: absolute;
   left: -10000px;
@@ -638,6 +640,7 @@ label{
   height: 1px;
   overflow: hidden;
 }
+
 .skip:focus {
   position: static;
   width: auto;
