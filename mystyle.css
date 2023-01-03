@@ -11,19 +11,25 @@ body {
   padding: 0;
 }
 
-.hamburger{
-  display: none;
+.hamburger {
+  /* display: none; */
   cursor: pointer;
 }
 
-.bar{
+.hamburger:active {
+  /* display: none; */
+  cursor: pointer;
+}
+
+.bar {
   display: block;
   width: 25px;
   height: 3px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: red;
+  background-color: black;
+  border-radius: 10px;
 }
 
 .flex-contain {
@@ -521,6 +527,10 @@ For small, less significant text and placeholders.
   .headclass h1 {
     font-size: 48px;
     line-height: 60px;
+  }
+
+  .bar {
+    display: none;
   }
 
   .headclass p {
