@@ -11,6 +11,21 @@ body {
   padding: 0;
 }
 
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: red;
+}
+
 .flex-contain {
   display: flex;
   list-style: none;
@@ -624,5 +639,41 @@ For small, less significant text and placeholders.
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .hamburger{
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: rotateY(8px) rotate(45deg);
+  } 
+  
+  .hamburger.active .bar:nth-child(3){
+    transform: rotateY(-8px) rotate(-45deg);
+  } 
+
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: yellow;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .navlink{
+    margin: 16px 0;
+  }
+
+  .nav-menu.active{
+    left: 0;
   }
 }
