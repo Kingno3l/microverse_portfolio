@@ -75,7 +75,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.contactsession h1,
+.contactsession h2,
 p {
   margin-bottom: 1rem;
 }
@@ -473,7 +473,7 @@ For small, less significant text and placeholders.
   font-family: 'Poppins', sans-serif;
 }
 
-.contactsession h1 {
+.contactsession h2 {
   padding-top: 2rem;
   font-weight: 700;
   font-size: 40px;
@@ -626,7 +626,7 @@ For small, less significant text and placeholders.
   }
 
   .about,
-  #main {
+  #main-content {
     width: 100%;
     padding: 0 5rem;
   }
@@ -705,4 +705,24 @@ For small, less significant text and placeholders.
   .nav-menu.active {
     left: 0;
   }
+}
+
+/* ---------------------------------------------------accessibility features ------------------------------------------------------------------------------ */
+label {
+  display: none;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
 }
