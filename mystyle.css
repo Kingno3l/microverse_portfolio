@@ -12,8 +12,8 @@ body {
 }
 
 .hamburger {
-  /* display: none; */
   cursor: pointer;
+  display: block;
 }
 
 .bar {
@@ -27,23 +27,17 @@ body {
   border-radius: 10px;
 }
 
-
-.hamburger{
-  display: block;
-}
-
-.active .bar:nth-child(2){
+.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.active .bar:nth-child(1){
-  transform:  rotate(135deg);
-} 
+.active .bar:nth-child(1) {
+  transform: rotate(135deg);
+}
 
-.active .bar:nth-child(3){
+.active .bar:nth-child(3) {
   transform: translateY(-16px) rotate(-135deg);
-} 
-
+}
 
 .flex-contain {
   display: flex;
@@ -195,18 +189,18 @@ For small, less significant text and placeholders.
   left: 0;
 }
 
-.navlink li{
+.navlink li {
   margin: 0.5rem;
   padding: 0.5rem;
   text-align: center;
 }
 
-.navlink li a{
-text-decoration: none;
-color: white;
+.navlink li a {
+  text-decoration: none;
+  color: white;
 }
 
-.show{
+.show {
   display: block;
 }
 
@@ -253,9 +247,8 @@ color: white;
   flex-direction: column;
   padding: 16px;
   gap: 12px;
-  height: fit-content;
 
-  /* Neutrals/N0 */
+  /* height: fit-content; */
   background: #fff;
 
   /* Neutrals/N40 */
@@ -685,8 +678,7 @@ color: white;
     align-items: center;
   }
 
-
-  .nav-menu{
+  .nav-menu {
     position: fixed;
     left: -100%;
     top: 70px;
@@ -698,20 +690,19 @@ color: white;
     transition: 0.3s;
   }
 
-  .navlink{
+  .navlink {
     position: unset;
     height: auto;
     display: flex;
     width: auto;
     background-color: transparent;
-
   }
 
-  .navlink li a{
+  .navlink li a {
     color: #2230d2;
   }
 
-  .nav-menu.active{
+  .nav-menu.active {
     left: 0;
   }
 }
