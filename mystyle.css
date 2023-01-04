@@ -14,6 +14,7 @@ body {
 .hamburger {
   cursor: pointer;
   display: block;
+  z-index: 999;
 }
 
 .bar {
@@ -33,10 +34,14 @@ body {
 
 .active .bar:nth-child(1) {
   transform: rotate(135deg);
+  background-color: white;
+  color: white;
 }
 
 .active .bar:nth-child(3) {
   transform: translateY(-16px) rotate(-135deg);
+  background-color: white;
+  color: white;
 }
 
 .flex-contain {
@@ -184,15 +189,19 @@ For small, less significant text and placeholders.
   position: fixed;
   height: 100vh;
   background-color: #6070ff;
-  width: 85%;
+  width: 100%;
+  font-size: xx-large;
+  font-weight: bolder;
+  padding-top: 3rem;
   top: 0;
   left: 0;
+  opacity: 95%;
 }
 
 .navlink li {
   margin: 0.5rem;
   padding: 0.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .navlink li a {
@@ -696,10 +705,18 @@ For small, less significant text and placeholders.
     display: flex;
     width: auto;
     background-color: transparent;
+
+    font-size: medium;
+    font-weight: normal;
+    padding-top: 0;
   }
 
   .navlink li a {
     color: #2230d2;
+  }
+
+  .close {
+    background-image: url("img/close.png");
   }
 
   .nav-menu.active {
