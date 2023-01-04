@@ -25,15 +25,20 @@
                 <a href="#main" class="skip">Skip to main content</a>
                 <nav class="flex-container">
                     <div class="logo-div">My Logo</div>
-                    <div class="hamburger_icon mobile"> <img src="img/hamburger-menu-icon.png" width="20">
+                    <div class="hamburger close">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"> </span>
                     </div>
-                    <div class="desktop">
+                    
+                    <!-- <div class="hamburger_icon mobile"> <img src="img/hamburger-menu-icon.png" width="20"> -->
+                    <!-- </div> -->
+                    
                         <ul class="navlink">
-                            <li>Portfolio</li>
-                            <li>About</li>
-                            <li>Contact</li>
+                            <li> <a href="#portfolioid"> Portfolio </a> </li>
+                            <li> <a href="#aboutid"> About </a> </li>
+                            <li> <a href="#contactid"> Contact </a> </li>
                         </ul>
-                    </div>
                 </nav>
             </header>
             <section class="headclass">
@@ -61,7 +66,7 @@
             </section>
         </section>
 
-        <section class="gridclass">
+        <section class="gridclass" id="portfolioid">
 
             <section class="cardone">
                 <div class="imagefit">
@@ -239,8 +244,8 @@
         </section>
 
         <section class="about">
-            <main id="main-content">
-                <h3 class="aboutheader">
+            <main id="main">
+                <h1 class="aboutheader" id="aboutid">
                     About
                     <br>
                     Myself
@@ -308,7 +313,7 @@
 
 
     <footer class="whitesession">
-        <section class="contactsession">
+        <section class="contactsession" id="contactid">
             <div class="footerdiv">
                 <h2>Contact me</h2>
                 <p>If you have an application you are interested in developing, a feature that you need built or a
@@ -333,7 +338,7 @@
             </div>
         </section>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
