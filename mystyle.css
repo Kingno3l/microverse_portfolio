@@ -16,11 +16,6 @@ body {
   cursor: pointer;
 }
 
-.hamburger:active {
-  /* display: none; */
-  cursor: pointer;
-}
-
 .bar {
   display: block;
   width: 25px;
@@ -28,9 +23,27 @@ body {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: black;
+  background-color: #6070ff;
   border-radius: 10px;
 }
+
+
+.hamburger{
+  display: block;
+}
+
+.active .bar:nth-child(2){
+  opacity: 0;
+}
+
+.active .bar:nth-child(1){
+  transform:  rotate(135deg);
+} 
+
+.active .bar:nth-child(3){
+  transform: translateY(-16px) rotate(-135deg);
+} 
+
 
 .flex-contain {
   display: flex;
@@ -39,11 +52,12 @@ body {
 }
 
 .flex-container {
+  align-items: center;
   display: flex;
   justify-content: space-between;
   width: 100%;
   list-style: none;
-  padding: 2rem;
+  padding: 1rem;
   position: fixed;
   background-color: white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -171,9 +185,29 @@ For small, less significant text and placeholders.
 }
 
 .navlink {
-  display: flex;
+  display: none;
   list-style-type: none;
-  gap: 2rem;
+  position: fixed;
+  height: 100vh;
+  background-color: #6070ff;
+  width: 85%;
+  top: 0;
+  left: 0;
+}
+
+.navlink li{
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.navlink li a{
+text-decoration: none;
+color: white;
+}
+
+.show{
+  display: block;
 }
 
 .connect {
@@ -651,21 +685,6 @@ For small, less significant text and placeholders.
     align-items: center;
   }
 
-  .hamburger{
-    display: block;
-  }
-
-  .hamburger.active .bar:nth-child(2){
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1){
-    transform: rotateY(8px) rotate(45deg);
-  } 
-  
-  .hamburger.active .bar:nth-child(3){
-    transform: rotateY(-8px) rotate(-45deg);
-  } 
 
   .nav-menu{
     position: fixed;
@@ -680,7 +699,16 @@ For small, less significant text and placeholders.
   }
 
   .navlink{
-    margin: 16px 0;
+    position: unset;
+    height: auto;
+    display: flex;
+    width: auto;
+    background-color: transparent;
+
+  }
+
+  .navlink li a{
+    color: #2230d2;
   }
 
   .nav-menu.active{
