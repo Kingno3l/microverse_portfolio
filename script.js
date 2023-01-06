@@ -231,7 +231,7 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   checkLowerCase(email);
 });
-//START STORAGE
+// START STORAGE
 
 const valueInput = JSON.parse(localStorage.getItem('valueInput')) || [];
 
