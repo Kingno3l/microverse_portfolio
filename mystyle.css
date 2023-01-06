@@ -211,6 +211,7 @@ For small, less significant text and placeholders.
 
 .show {
   display: block;
+  right: 0;
 }
 
 .connect {
@@ -557,9 +558,9 @@ For small, less significant text and placeholders.
   transition: 0.5s all;
 }
 
-.show {
+/* .show {
   right: 0;
-}
+} */
 
 .popup .content {
   background-color: white;
