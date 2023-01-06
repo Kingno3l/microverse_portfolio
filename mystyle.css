@@ -163,6 +163,14 @@ For small, less significant text and placeholders.
   flex-grow: 0;
 }
 
+.content .dark {
+  list-style: none;
+  color: black;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .section_body {
   /* Body / 2 */
   font-family: 'Poppins', sans-serif;
@@ -828,4 +836,8 @@ label {
   padding: 4px 12px;
   margin-right: 3px;
   margin-bottom: 5px;
+}
+
+.project .dark {
+  font-size: 18px;
 }
