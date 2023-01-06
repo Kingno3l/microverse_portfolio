@@ -232,21 +232,20 @@ form.addEventListener('submit', (event) => {
   checkLowerCase(email);
 });
 
-
 // START STORAGE
 
 const valueInput = JSON.parse(localStorage.getItem('valueInput')) || [];
 
-function addVale(user_name, user_email, usertext) {
-  valueInput.push({ user_name, user_email, usertext });
+function addVale(userName, userEmail, userText) {
+  valueInput.push({ userName, userEmail, userText });
   localStorage.setItem('valueInput', JSON.stringify(valueInput));
-  return { user_name, user_email, usertext };
+  return { userName, userEmail, userText };
 }
 
-function showNow({ user_name, user_email, usertext }) {
-  namee.value = user_name;
-  email.value = user_email;
-  text.value = usertext;
+function showNow({ userName, userEmail, userText }) {
+  namee.value = userName;
+  email.value = userEmail;
+  text.value = userText;
 }
 
 valueInput.forEach(showNow);
