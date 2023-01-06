@@ -237,16 +237,16 @@ form.addEventListener('submit', (event) => {
 
 const valueInput = JSON.parse(localStorage.getItem('valueInput')) || [];
 
-function addVale(n, e, t) {
-  valueInput.push({ n, e, t });
+function addVale(user_name, user_email, usertext) {
+  valueInput.push({ user_name, user_email, usertext });
   localStorage.setItem('valueInput', JSON.stringify(valueInput));
-  return { n, e, t };
+  return { user_name, user_email, usertext };
 }
 
-function showNow({ n, e, t }) {
-  namee.value = n;
-  email.value = e;
-  text.value = t;
+function showNow({ user_name, user_email, usertext }) {
+  namee.value = user_name;
+  email.value = user_email;
+  text.value = usertext;
 }
 
 valueInput.forEach(showNow);
