@@ -211,6 +211,7 @@ For small, less significant text and placeholders.
 
 .show {
   display: block;
+  right: 0;
 }
 
 .connect {
@@ -557,9 +558,9 @@ For small, less significant text and placeholders.
   transition: 0.5s all;
 }
 
-.show {
+/* .show {
   right: 0;
-}
+} */
 
 .popup .content {
   background-color: white;
@@ -595,6 +596,7 @@ For small, less significant text and placeholders.
   text-align: left;
   font-size: 14px;
 }
+
 .message {
   width: 100%;
   background-color: #fff;
@@ -607,6 +609,7 @@ For small, less significant text and placeholders.
   padding: 2%;
   display: none;
 }
+
 /* media */
 @media (min-width: 768px) {
   .headclass {
@@ -786,6 +789,7 @@ For small, less significant text and placeholders.
   .nav-menu.active {
     left: 0;
   }
+
   .popup {
     position: fixed;
     height: 100vh;
@@ -845,6 +849,7 @@ For small, less significant text and placeholders.
     margin-bottom: 5px;
   }
 }
+
 @media (min-width: 1026px) {
   #projects {
     padding: 3rem;
@@ -868,6 +873,7 @@ For small, less significant text and placeholders.
     font-size: 14px;
   }
 }
+
 /* ---------------------------------------------------accessibility features ------------------------------------------------------------------------------ */
 label {
   display: none;

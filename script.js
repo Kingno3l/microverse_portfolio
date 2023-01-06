@@ -203,8 +203,8 @@ project.forEach((pro, index) => {
 const form = document.querySelector('form');
 const email = document.querySelector('input[type="email"]');
 const msg = document.querySelector('form .message');
-const text = document.querySelector('textarea');
-const namee = document.querySelector('input#name');
+// const text = document.querySelector('textarea');
+// const namee = document.querySelector('input#name');
 
 function showError(m) {
   msg.style.display = 'block';
@@ -231,5 +231,4 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   checkLowerCase(email);
 });
-//START STORAGE
-
+// START STORAGE
