@@ -18,8 +18,8 @@ const array = [
   {
     mobileTopic: 'tonic',
     desktopTopic: 'tonic',
-    mobileImage: 'img/Snapshoot Portfolio popup mobile.png',
-    desktopImage: 'img/Snapshoot Portfolio popup.png',
+    mobileImage: 'img/m1.png',
+    desktopImage: 'img/first.png',
     desktopdesc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry standard dummy text ever since the 1500s,
     1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -37,8 +37,8 @@ const array = [
   {
     mobileTopic: 'multi-post stories',
     desktopTopic: 'multi-post stories',
-    mobileImage: 'img/Snapshoot Portfolio popup mobile.png',
-    desktopImage: 'img/Snapshoot Portfolio popup.png',
+    mobileImage: 'img/m2.png',
+    desktopImage: 'img/second.png',
     desktopdesc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry standard dummy text ever since the 1500s,
     1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -56,8 +56,8 @@ const array = [
   {
     mobileTopic: 'tonic',
     desktopTopic: 'facebook 360',
-    mobileImage: 'img/Snapshoot Portfolio popup mobile.png',
-    desktopImage: 'img/Snapshoot Portfolio popup.png',
+    mobileImage: 'img/m3.png',
+    desktopImage: 'img/third.png',
     desktopdesc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry standard dummy text ever since the 1500s,
     1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -75,8 +75,8 @@ const array = [
   {
     mobileTopic: 'multi-post stories',
     desktopTopic: 'uber navigation',
-    mobileImage: 'img/Snapshoot Portfolio popup mobile.png',
-    desktopImage: 'img/Snapshoot Portfolio popup.png',
+    mobileImage: 'img/m4.png',
+    desktopImage: 'img/fourth.png',
     desktopdesc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry standard dummy text ever since the 1500s,
       1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.

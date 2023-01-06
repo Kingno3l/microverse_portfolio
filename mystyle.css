@@ -113,6 +113,35 @@ p {
   margin-left: 15px;
 }
 
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup .content .top h2 {
+  font-size: 28px;
+  line-height: 20px;
+}
+
+.content .top,
+.content .mid {
+  margin-bottom: 1rem;
+}
+
+.top h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.top ul .desktop {
+  display: list-item;
+}
+
+.popup .content .top {
+  margin: 5px 0;
+}
+
 .hamburger_icon {
   margin-left: auto;
   display: flex;
