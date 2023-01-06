@@ -233,23 +233,3 @@ form.addEventListener('submit', (event) => {
 });
 //START STORAGE
 
-const valueInput = JSON.parse(localStorage.getItem('valueInput')) || [];
-
-function addVale(n, e, t) {
-  valueInput.push({ n, e, t });
-  localStorage.setItem('valueInput', JSON.stringify(valueInput));
-  return { n, e, t };
-}
-
-function showNow({ n, e, t }) {
-  namee.value = n;
-  email.value = e;
-  text.value = t;
-}
-
-valueInput.forEach(showNow);
-
-form.addEventListener('change', (event) => {
-  event.preventDefault();
-  addVale(namee.value, email.value, text.value);
-});
