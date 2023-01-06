@@ -793,7 +793,7 @@ label {
 
 
 /* popup */
-/* .popup .image img:hover {
+.popup .image img:hover {
   transform: none;
 }
 .popup .content {
@@ -828,4 +828,4 @@ label {
   padding: 4px 12px;
   margin-right: 3px;
   margin-bottom: 5px;
-} */
+}
