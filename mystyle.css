@@ -542,6 +542,54 @@ For small, less significant text and placeholders.
   display: none;
 }
 
+/* popup */
+.popup {
+  background-color: #c1c7d069;
+  backdrop-filter: blur(5px);
+  padding: 1rem;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: -100%;
+  z-index: 99;
+  transition: 0.5s all;
+}
+.show {
+  right: 0;
+}
+.popup .content {
+  background-color: white;
+  height: 95vh;
+  padding: 0.8rem;
+  position: relative;
+  border-radius: 10px;
+}
+.popup .content .image {
+  width: 100%;
+}
+.popup .content .image img {
+  width: 100%;
+}
+.content #cancel-port {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.content .button {
+  display: flex;
+  padding: 0.5rem 0;
+  border-top: 1px solid #EBECF0;
+}
+.conditions {
+  display: none;
+  text-align: left;
+  font-size: 14px;
+}
+
 /* media */
 @media (min-width: 768px) {
   .headclass {
@@ -741,4 +789,43 @@ label {
   position: static;
   width: auto;
   height: auto;
+}
+
+
+/* popup */
+.popup .image img:hover {
+  transform: none;
+}
+.popup .content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  margin: 0 auto;
+}
+.popup .content .top {
+  margin: 5px 0;
+}
+.content .bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.content .bottom ul {
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+.bottom .words {
+  width: 65%;
+}
+.bottom .other {
+  width: 33%;
+}
+.popup .stack li {
+  font-size: 12px;
+  padding: 4px 12px;
+  margin-right: 3px;
+  margin-bottom: 5px;
 }
