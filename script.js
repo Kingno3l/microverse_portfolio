@@ -12,7 +12,6 @@ document.querySelectorAll('.navlink').forEach((n) => n.addEventListener('click',
   navMenu.classList.remove('show');
 }));
 
-
 // popup
 const array = [
   {
@@ -88,8 +87,8 @@ const array = [
       Lorem Ipsum has been the industry standard dummy text ever since the 1500s,
        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
       It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.`,
-      link: 'https://kingno3l.github.io/microverse_portfolio/',
-      source: ' https://github.com/kingnoel/microverse_portfolio/',
+    link: 'https://kingno3l.github.io/microverse_portfolio/',
+    source: ' https://github.com/kingnoel/microverse_portfolio/',
   },
 ];
 const extra = document.querySelector('#extra');
@@ -166,7 +165,6 @@ project.forEach((pro, index) => {
     }
   });
 });
-
 
 // form validation
 const form = document.querySelector('form');
