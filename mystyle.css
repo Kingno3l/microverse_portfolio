@@ -123,56 +123,6 @@ p {
   margin-left: 15px;
 }
 
-.top {
-  display: flex;
-  flex-direction: column;
-}
-
-.top li {
-  margin-right: 10px;
-  list-style: none;
-}
-
-.top h2 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 52px;
-}
-
-.contactsession h2 {
-  padding-top: 2rem;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.popup .content .top h2 {
-  font-size: 28px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.content .top,
-.content .mid {
-  margin-bottom: 1rem;
-}
-
-.desktop {
-  display: none;
-  margin-right: 10px;
-}
-
-.top ul .desktop {
-  display: list-item;
-  display: none;
-}
-
-.popup .content .top {
-  margin: 5px 0;
-}
-
 .hamburger_icon {
   margin-left: auto;
   display: flex;
@@ -272,17 +222,6 @@ For small, less significant text and placeholders.
   text-align: left;
 }
 
-.button a {
-  padding: 5px 25px;
-  font-size: 12px;
-  width: 100%;
-  margin: 5px 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
 .navlink li a {
   text-decoration: none;
   color: white;
@@ -294,6 +233,7 @@ For small, less significant text and placeholders.
 }
 
 .connect {
+  /* Body / 2 - Bolder */
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -561,6 +501,15 @@ For small, less significant text and placeholders.
   font-family: 'Poppins', sans-serif;
 }
 
+.contactsession h2 {
+  padding-top: 2rem;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
 .contactsession input,
 .contactsession textarea {
   width: 100%;
@@ -609,11 +558,10 @@ For small, less significant text and placeholders.
 }
 
 
-/* popup */
 .popup {
   background-color: #c1c7d069;
   backdrop-filter: blur(5px);
-  padding: 1rem;
+  padding: 1rem 0;
   height: 100vh;
   position: fixed;
   width: 100%;
@@ -631,11 +579,19 @@ For small, less significant text and placeholders.
   padding: 0.8rem;
   position: relative;
   border-radius: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .popup .content .image {
   width: 100%;
   height: 250px;
+}
+
+.button a img {
+  margin-left: 7px;
 }
 
 .popup .content .image img {
@@ -677,76 +633,6 @@ For small, less significant text and placeholders.
 
 .cl {
   display: none;
-}
-
-
-/* ---------------------------------------------------accessibility features ------------------------------------------------------------------------------ */
-label {
-  display: none;
-}
-
-.skip {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.skip:focus {
-  position: static;
-  width: auto;
-  height: auto;
-}
-
-
-/* popup */
-.popup .image img:hover {
-  transform: none;
-}
-
-.content .bottom {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  margin-top: 1rem;
-}
-
-.content ul {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.content .bottom ul {
-  flex-wrap: wrap;
-  margin-bottom: 0;
-  border-radius: 8px;
-  padding-bottom: 10px;
-}
-
-.bottom .words {
-  width: 100%;
-}
-
-.bottom .other {
-  width: 33%;
-}
-
-.popup .stack li {
-  font-size: 16px;
-  padding: 4px 12px;
-  margin-right: 10px;
-  margin-bottom: 5px;
-}
-
-.project .dark {
-  font-size: 18px;
-}
-
-.stt {
-  display: flex;
 }
 
 /* media */
@@ -921,6 +807,12 @@ label {
     padding-top: 0;
   }
 
+  .button a {
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+  }
+
   .navlink li a {
     color: #2230d2;
   }
@@ -933,15 +825,12 @@ label {
     left: 0;
   }
 
-  .popup {
-    position: fixed;
-    height: 100vh;
-    padding: 2rem;
+  .popup .content .image {
+    height: 250px;
   }
 
-  .button img {
+  .button a img {
     width: 12px;
-    margin-left: 5px;
   }
 
   .popup .content .image img {
@@ -953,7 +842,7 @@ label {
   }
 
   .popup .content {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     height: 90vh;
@@ -968,7 +857,6 @@ label {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
-    flex-direction: row;
   }
 
   .content .bottom ul {
@@ -978,12 +866,8 @@ label {
     padding-bottom: 10px;
   }
 
-  .bottom .words {
-    width: 65%;
-  }
-
   .bottom .other {
-    width: 33%;
+    width: 40%;
   }
 
   .popup .stack li {
@@ -992,4 +876,48 @@ label {
     margin-right: 3px;
     margin-bottom: 5px;
   }
+}
+
+@media (min-width: 1026px) {
+  #projects {
+    padding: 3rem;
+    width: 80%;
+  }
+
+  .popup .image {
+    height: 280px;
+  }
+
+  .content .bottom p {
+    font-size: 14px;
+  }
+
+  .popup .stack li {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .button a {
+    font-size: 14px;
+  }
+}
+
+/* ---------------------------------------------------accessibility features ------------------------------------------------------------------------------ */
+label {
+  display: none;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
 }
