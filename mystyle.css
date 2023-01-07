@@ -685,7 +685,6 @@ For small, less significant text and placeholders.
   display: none;
 }
 
-
 /* ---------------------------------------------------accessibility features ------------------------------------------------------------------------------ */
 label {
   display: none;
@@ -705,7 +704,6 @@ label {
   width: auto;
   height: auto;
 }
-
 
 /* popup */
 .popup .image img:hover {
