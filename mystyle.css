@@ -127,10 +127,12 @@ p {
   display: flex;
   flex-direction: column;
 }
-.top li{
+
+.top li {
   margin-right: 10px;
   list-style: none;
 }
+
 .popup .content .top h2 {
   font-size: 28px;
   line-height: 20px;
@@ -140,11 +142,6 @@ p {
 .content .top,
 .content .mid {
   margin-bottom: 1rem;
-}
-
-.content ul {
-  display: flex;
-  align-items: center;
 }
 
 .top h2 {
@@ -259,6 +256,17 @@ For small, less significant text and placeholders.
   margin: 0.5rem;
   padding: 0.5rem;
   text-align: left;
+}
+
+.button a {
+  padding: 5px 7px;
+  font-size: 12px;
+  width: 100%;
+  margin: 5px 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .navlink li a {
@@ -615,9 +623,11 @@ For small, less significant text and placeholders.
   z-index: 99;
   transition: 0.5s all;
 }
+
 .show {
   right: 0;
 }
+
 .popup .content {
   background-color: white;
   height: 95vh;
@@ -625,31 +635,40 @@ For small, less significant text and placeholders.
   position: relative;
   border-radius: 10px;
 }
+
 .popup .content .image {
   width: 100%;
 }
+
 .popup .content .image img {
   width: 100%;
   height: 100%;
 }
+
 .content #cancel-port {
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
 }
+
 .content .button {
   display: flex;
   padding: 0.5rem 0;
-  border-top: 1px solid #EBECF0;
+  border-top: 1px solid #ebecf0;
 }
+
+.content ul {
+  display: flex;
+}
+
 .conditions {
   display: none;
   text-align: left;
   font-size: 14px;
 }
 
-.button a img{
+.button a img {
   margin-left: 7px;
 }
 
@@ -665,7 +684,8 @@ For small, less significant text and placeholders.
   font-family: 'Poppins', sans-serif;
   transition: 0.3s linear;
 }
-.cl{
+
+.cl {
   display: none;
 }
 
@@ -695,6 +715,7 @@ label {
 .popup .image img:hover {
   transform: none;
 }
+
 .popup .content {
   width: 90%;
   display: flex;
@@ -702,21 +723,25 @@ label {
   height: 90vh;
   margin: 0 auto;
 }
+
 .popup .content .top {
   margin: 5px 0;
 }
+
 .content .bottom {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   margin-top: 1rem;
 }
+
 .content .bottom ul {
   flex-wrap: wrap;
   margin-bottom: 0;
   border-radius: 8px;
   padding-bottom: 10px;
 }
+
 .bottom .words {
   width: 100%;
 }
@@ -725,45 +750,21 @@ label {
   width: 100%;
 }
 
-.button a {
-  padding: 5px 7px;
-  font-size: 12px;
-  margin: 5px;
-  width: 100%;
-  margin: 5px 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-
-.popup .stack li {
-  font-size: 12px;
-  padding: 4px 12px;
-  margin-right: 3px;
-  margin-bottom: 5px;
-}
-
 .popup .stack li {
   font-size: 16px;
+  padding: 4px 12px;
   margin-right: 10px;
+  margin-bottom: 5px;
 }
-
 
 .project .dark {
   font-size: 18px;
 }
 
-.content ul {
-  display: flex;
-  align-items: center;
-  gap: 1.5 rem;
-}
-
 .stt {
   display: flex;
 }
+
 /* media */
 @media (min-width: 768px) {
   .headclass {
@@ -896,9 +897,10 @@ label {
     display: block;
     list-style: none;
   }
+
   .top ul .desktop {
     display: block;
-}
+  }
 
   .overflow {
     overflow-wrap: break-word;
@@ -935,6 +937,12 @@ label {
     padding-top: 0;
   }
 
+  .button a {
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+  }
+
   .navlink li a {
     color: #2230d2;
   }
@@ -951,12 +959,18 @@ label {
     height: 250px;
   }
 
+  .button a img {
+    width: 12px;
+  }
+
   .popup .content .image img {
     width: 100%;
   }
+
   .popup .image img:hover {
     transform: none;
   }
+
   .popup .content {
     width: 80%;
     display: flex;
@@ -964,44 +978,37 @@ label {
     height: 90vh;
     margin: 0 auto;
   }
+
   .popup .content .top {
     margin: 5px 0;
   }
+
   .content .bottom {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
     flex-direction: row;
   }
+
   .content .bottom ul {
     flex-wrap: wrap;
     margin-bottom: 0;
     border-radius: 8px;
     padding-bottom: 10px;
   }
+
   .bottom .words {
     width: 65%;
   }
-  .button a {
-    padding: 5px;
-    margin: 5px;
-    width: 100%;
-}
-
-.button a img {
-  width: 12px;
-}
 
   .bottom .other {
     width: 40%;
   }
+
   .popup .stack li {
     font-size: 12px;
     padding: 4px 12px;
     margin-right: 3px;
     margin-bottom: 5px;
   }
-  .bottom .words {
-    width: 65%;
-}
 }
