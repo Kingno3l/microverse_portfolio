@@ -133,6 +133,21 @@ p {
   list-style: none;
 }
 
+.top h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.contactsession h2 {
+  padding-top: 2rem;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
 .popup .content .top h2 {
   font-size: 28px;
   line-height: 20px;
@@ -142,17 +157,6 @@ p {
 .content .top,
 .content .mid {
   margin-bottom: 1rem;
-}
-
-.top h2 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 52px;
-}
-
-.top ul .desktop {
-  display: list-item;
-  display: none;
 }
 
 .popup .content .top {
@@ -272,10 +276,6 @@ For small, less significant text and placeholders.
 .navlink li a {
   text-decoration: none;
   color: white;
-}
-
-.show {
-  display: block;
 }
 
 .connect {
@@ -547,15 +547,6 @@ For small, less significant text and placeholders.
   font-family: 'Poppins', sans-serif;
 }
 
-.contactsession h2 {
-  padding-top: 2rem;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  margin-top: 3rem;
-}
-
 .contactsession input,
 .contactsession textarea {
   width: 100%;
@@ -626,11 +617,16 @@ For small, less significant text and placeholders.
 
 .show {
   right: 0;
+  display: block;
 }
 
 .popup .content {
   background-color: white;
-  height: 95vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  margin: 0 auto;
   padding: 0.8rem;
   position: relative;
   border-radius: 10px;
@@ -638,6 +634,10 @@ For small, less significant text and placeholders.
 
 .popup .content .image {
   width: 100%;
+}
+
+.button a img {
+  margin-left: 7px;
 }
 
 .popup .content .image img {
@@ -666,10 +666,6 @@ For small, less significant text and placeholders.
   display: none;
   text-align: left;
   font-size: 14px;
-}
-
-.button a img {
-  margin-left: 7px;
 }
 
 .btn {
@@ -716,18 +712,6 @@ label {
   transform: none;
 }
 
-.popup .content {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  height: 90vh;
-  margin: 0 auto;
-}
-
-.popup .content .top {
-  margin: 5px 0;
-}
-
 .content .bottom {
   display: flex;
   justify-content: space-between;
@@ -759,6 +743,11 @@ label {
 
 .project .dark {
   font-size: 18px;
+}
+
+.top ul .desktop {
+  display: list-item;
+  display: none;
 }
 
 .stt {
