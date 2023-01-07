@@ -107,7 +107,7 @@ function display(main, i) {
           <li class="desktop">2018</li>
           <li class="mobile">2015</li>
         </ul>
-      </div>
+x      </div>
       <div class="image">
         <img src="${main[i].mobileImage}"  class="mobile"/>
         <img src="${main[i].desktopImage}" class="desktop"/>

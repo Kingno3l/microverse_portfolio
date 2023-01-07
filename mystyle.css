@@ -89,6 +89,16 @@ p {
   border-radius: 15px 50px 30px 5px;
 }
 
+.stack li {
+  color: #6070ff;
+  font-size: 15px;
+  background-color: #ebebff;
+  list-style: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
 .logo-div {
   /* My Logo */
   height: 20px;
@@ -126,6 +136,11 @@ p {
 .content .top,
 .content .mid {
   margin-bottom: 1rem;
+}
+
+.content ul {
+  display: flex;
+  align-items: center;
 }
 
 .top h2 {
@@ -606,9 +621,11 @@ For small, less significant text and placeholders.
 }
 .popup .content .image {
   width: 100%;
+  height: 250px;
 }
 .popup .content .image img {
   width: 100%;
+  height: 100%;
 }
 .content #cancel-port {
   position: absolute;
@@ -626,6 +643,7 @@ For small, less significant text and placeholders.
   text-align: left;
   font-size: 14px;
 }
+
 
 /* media */
 @media (min-width: 768px) {
@@ -857,6 +875,17 @@ label {
 .bottom .words {
   width: 65%;
 }
+
+.bottom .other {
+  width: 33%;
+}
+
+.button a {
+  padding: 5px;
+  font-size: 12px;
+  margin: 5px;
+  width: 100%;
+}
 .bottom .other {
   width: 33%;
 }
@@ -867,6 +896,18 @@ label {
   margin-bottom: 5px;
 }
 
+.popup .stack li {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+
 .project .dark {
   font-size: 18px;
+}
+
+.content ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5 rem;
 }
