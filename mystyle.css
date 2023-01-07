@@ -89,6 +89,16 @@ p {
   border-radius: 15px 50px 30px 5px;
 }
 
+.stack li {
+  color: #6070ff;
+  font-size: 15px;
+  background-color: #ebebff;
+  list-style: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
 .logo-div {
   /* My Logo */
   height: 20px;
@@ -111,6 +121,45 @@ p {
   order: 0;
   flex-grow: 0;
   margin-left: 15px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+}
+.top li{
+  margin-right: 10px;
+  list-style: none;
+}
+.popup .content .top h2 {
+  font-size: 28px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.content .top,
+.content .mid {
+  margin-bottom: 1rem;
+}
+
+.content ul {
+  display: flex;
+  align-items: center;
+}
+
+.top h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.top ul .desktop {
+  display: list-item;
+  display: none;
+}
+
+.popup .content .top {
+  margin: 5px 0;
 }
 
 .hamburger_icon {
@@ -163,6 +212,14 @@ For small, less significant text and placeholders.
   flex-grow: 0;
 }
 
+.content .dark {
+  list-style: none;
+  color: black;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .section_body {
   /* Body / 2 */
   font-family: 'Poppins', sans-serif;
@@ -211,10 +268,10 @@ For small, less significant text and placeholders.
 
 .show {
   display: block;
-  right: 0;
 }
 
 .connect {
+  /* Body / 2 - Bolder */
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -540,8 +597,10 @@ For small, less significant text and placeholders.
 
 .desktop {
   display: none;
+  margin-right: 10px;
 }
 
+/* popup */
 .popup {
   background-color: #c1c7d069;
   backdrop-filter: blur(5px);
@@ -556,11 +615,9 @@ For small, less significant text and placeholders.
   z-index: 99;
   transition: 0.5s all;
 }
-
-/* .show {
+.show {
   right: 0;
-} */
-
+}
 .popup .content {
   background-color: white;
   height: 95vh;
@@ -568,47 +625,148 @@ For small, less significant text and placeholders.
   position: relative;
   border-radius: 10px;
 }
-
 .popup .content .image {
   width: 100%;
+  height: 250px;
 }
-
 .popup .content .image img {
   width: 100%;
+  height: 100%;
 }
-
 .content #cancel-port {
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
 }
-
 .content .button {
   display: flex;
   padding: 0.5rem 0;
-  border-top: 1px solid #ebecf0;
+  border-top: 1px solid #EBECF0;
 }
-
 .conditions {
   display: none;
   text-align: left;
   font-size: 14px;
 }
 
-.message {
-  width: 100%;
-  background-color: #fff;
-  color: rgb(205 0 0);
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 15px;
-  border: 1px solid rgb(205 0 0);
-  border-radius: 4px;
-  padding: 2%;
+.button a img{
+  margin-left: 7px;
+}
+
+.btn {
+  margin: 0.7rem 0;
+  color: #396df2;
+  outline: none;
+  background: transparent;
+  font-size: 17px;
+  padding: 5px;
+  border: 1px solid #396df2;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s linear;
+}
+.cl{
   display: none;
 }
 
+
+/* ---------------------------------------------------accessibility features ------------------------------------------------------------------------------ */
+label {
+  display: none;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+
+/* popup */
+.popup .image img:hover {
+  transform: none;
+}
+.popup .content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  margin: 0 auto;
+}
+.popup .content .top {
+  margin: 5px 0;
+}
+.content .bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.content .bottom ul {
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+.bottom .words {
+  width: 100%;
+}
+
+.bottom .other {
+  width: 33%;
+}
+
+.button a {
+  padding: 5px 7px;
+  font-size: 12px;
+  margin: 5px;
+  width: 100%;
+  margin: 5px 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.bottom .other {
+  width: 33%;
+}
+
+.popup .stack li {
+  font-size: 12px;
+  padding: 4px 12px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.popup .stack li {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+
+.project .dark {
+  font-size: 18px;
+}
+
+.content ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5 rem;
+}
+
+.stt {
+  display: flex;
+}
 /* media */
 @media (min-width: 768px) {
   .headclass {
@@ -741,6 +899,9 @@ For small, less significant text and placeholders.
     display: block;
     list-style: none;
   }
+  .top ul .desktop {
+    display: block;
+}
 
   .overflow {
     overflow-wrap: break-word;
@@ -789,106 +950,53 @@ For small, less significant text and placeholders.
     left: 0;
   }
 
-  .popup {
-    position: fixed;
-    height: 100vh;
-    padding: 2rem;
-  }
-
-  .button img {
-    width: 12px;
-    margin-left: 5px;
-  }
-
   .popup .content .image img {
     width: 100%;
   }
-
   .popup .image img:hover {
     transform: none;
   }
-
   .popup .content {
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     height: 90vh;
     margin: 0 auto;
   }
-
   .popup .content .top {
     margin: 5px 0;
   }
-
   .content .bottom {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+    flex-direction: row;
   }
-
   .content .bottom ul {
     flex-wrap: wrap;
     margin-bottom: 0;
     border-radius: 8px;
     padding-bottom: 10px;
   }
-
   .bottom .words {
     width: 65%;
   }
-
+  .button a {
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px;
+    width: 100%;
+}
   .bottom .other {
     width: 33%;
   }
-
   .popup .stack li {
     font-size: 12px;
     padding: 4px 12px;
     margin-right: 3px;
     margin-bottom: 5px;
   }
+  .bottom .words {
+    width: 65%;
 }
-
-@media (min-width: 1026px) {
-  #projects {
-    padding: 3rem;
-    width: 80%;
-  }
-
-  .popup .image {
-    height: 280px;
-  }
-
-  .content .bottom p {
-    font-size: 14px;
-  }
-
-  .popup .stack li {
-    font-size: 16px;
-    margin-right: 10px;
-  }
-
-  .button a {
-    font-size: 14px;
-  }
-}
-
-/* ---------------------------------------------------accessibility features ------------------------------------------------------------------------------ */
-label {
-  display: none;
-}
-
-.skip {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.skip:focus {
-  position: static;
-  width: auto;
-  height: auto;
 }
