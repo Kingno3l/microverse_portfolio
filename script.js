@@ -181,7 +181,7 @@ function showError(m) {
 function showSuccess(mass) {
   msg.style.display = 'block';
   msg.style.color = 'white';
-  msg.style.backgroundColor = '#ff6b00';
+  msg.style.backgroundColor = 'rgb(88, 51, 189)';
   msg.innerText = mass;
 }
 
