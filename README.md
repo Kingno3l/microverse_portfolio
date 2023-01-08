@@ -101,7 +101,7 @@ This portfolio project is a designed to showcase my work and let others know abo
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://kingnoel.github.io/microverse_portfolio/)
+- [Live Demo Link](https://kingno3l.github.io/microverse_portfolio/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->

@@ -290,10 +290,10 @@ For small, less significant text and placeholders.
 
 .show {
   display: block;
+  right: 0;
 }
 
 .connect {
-  /* Body / 2 - Bolder */
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -624,7 +624,9 @@ For small, less significant text and placeholders.
   z-index: 99;
   transition: 0.5s all;
 }
-
+.show {
+  right: 0;
+}
 .popup .content {
   background-color: white;
   height: 95vh;
@@ -642,7 +644,6 @@ For small, less significant text and placeholders.
   width: 100%;
   height: 100%;
 }
-
 .content #cancel-port {
   position: absolute;
   top: 20px;
@@ -655,7 +656,6 @@ For small, less significant text and placeholders.
   padding: 0.5rem 0;
   border-top: 1px solid #ebecf0;
 }
-
 .conditions {
   display: none;
   text-align: left;
@@ -748,7 +748,6 @@ label {
 .stt {
   display: flex;
 }
-
 /* media */
 @media (min-width: 768px) {
   .headclass {
@@ -933,6 +932,17 @@ label {
     left: 0;
   }
 
+  .popup {
+    position: fixed;
+    height: 100vh;
+    padding: 2rem;
+  }
+
+  .button img {
+    width: 12px;
+    margin-left: 5px;
+  }
+
   .popup .content .image img {
     width: 100%;
   }
@@ -952,7 +962,6 @@ label {
   .popup .content .top {
     margin: 5px 0;
   }
-
   .content .bottom {
     display: flex;
     justify-content: space-between;
