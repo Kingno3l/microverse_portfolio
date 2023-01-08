@@ -600,10 +600,7 @@ For small, less significant text and placeholders.
   margin-right: 10px;
 }
 
-<<<<<<< HEAD
 /* popup */
-=======
->>>>>>> 642fd05575ca90568dd8ac50958c760f9c225a51
 .popup {
   background-color: #c1c7d069;
   backdrop-filter: blur(5px);
@@ -618,17 +615,14 @@ For small, less significant text and placeholders.
   z-index: 99;
   transition: 0.5s all;
 }
-<<<<<<< HEAD
 .show {
   right: 0;
 }
-=======
 
 /* .show {
   right: 0;
 } */
 
->>>>>>> 642fd05575ca90568dd8ac50958c760f9c225a51
 .popup .content {
   background-color: white;
   height: 95vh;
@@ -636,7 +630,6 @@ For small, less significant text and placeholders.
   position: relative;
   border-radius: 10px;
 }
-<<<<<<< HEAD
 .popup .content .image {
   width: 100%;
   height: 250px;
@@ -645,7 +638,6 @@ For small, less significant text and placeholders.
   width: 100%;
   height: 100%;
 }
-=======
 
 .popup .content .image {
   width: 100%;
@@ -655,20 +647,17 @@ For small, less significant text and placeholders.
   width: 100%;
 }
 
->>>>>>> 642fd05575ca90568dd8ac50958c760f9c225a51
 .content #cancel-port {
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
 }
-<<<<<<< HEAD
 .content .button {
   display: flex;
   padding: 0.5rem 0;
   border-top: 1px solid #EBECF0;
 }
-=======
 
 .content .button {
   display: flex;
@@ -676,14 +665,12 @@ For small, less significant text and placeholders.
   border-top: 1px solid #ebecf0;
 }
 
->>>>>>> 642fd05575ca90568dd8ac50958c760f9c225a51
 .conditions {
   display: none;
   text-align: left;
   font-size: 14px;
 }
 
-<<<<<<< HEAD
 
 .btn {
   margin: 0.7rem 0;
@@ -798,7 +785,6 @@ label {
 .stt {
   display: flex;
 }
-=======
 .message {
   width: 100%;
   background-color: #fff;
@@ -812,7 +798,6 @@ label {
   display: none;
 }
 
->>>>>>> 642fd05575ca90568dd8ac50958c760f9c225a51
 /* media */
 @media (min-width: 768px) {
   .headclass {
@@ -995,8 +980,6 @@ label {
   .nav-menu.active {
     left: 0;
   }
-<<<<<<< HEAD
-=======
 
   .popup {
     position: fixed;
@@ -1081,7 +1064,6 @@ label {
     font-size: 14px;
   }
 }
->>>>>>> 642fd05575ca90568dd8ac50958c760f9c225a51
 
   .popup .content .image img {
     width: 100%;
