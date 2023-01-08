@@ -16,9 +16,9 @@ document.querySelectorAll('.navlink').forEach((n) => n.addEventListener('click',
 // popup
 const array = [
   {
-    mobileTopic: 'tonic',
-    desktopTopic: 'tonic',
-    mobileImage: 'img/m1.png',
+    mobileTopic: 'Tonic',
+    desktopTopic: 'Tonic',
+    mobileImage: 'img/1m1.png',
     desktopImage: 'img/first.png',
     desktopdesc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry standard dummy text ever since the 1500s,
@@ -35,9 +35,9 @@ const array = [
     source: ' https://github.com/kingnoel/microverse_portfolio/',
   },
   {
-    mobileTopic: 'multi-post stories',
-    desktopTopic: 'multi-post stories',
-    mobileImage: 'img/m2.png',
+    mobileTopic: 'Tonic',
+    desktopTopic: 'Tonic',
+    mobileImage: 'img/1m1.png',
     desktopImage: 'img/second.png',
     desktopdesc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry standard dummy text ever since the 1500s,
@@ -54,9 +54,9 @@ const array = [
     source: ' https://github.com/kingnoel/microverse_portfolio/',
   },
   {
-    mobileTopic: 'tonic',
-    desktopTopic: 'facebook 360',
-    mobileImage: 'img/m3.png',
+    mobileTopic: 'Tonic',
+    desktopTopic: 'Tonic',
+    mobileImage: 'img/1m1.png',
     desktopImage: 'img/third.png',
     desktopdesc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry standard dummy text ever since the 1500s,
@@ -73,9 +73,9 @@ const array = [
     source: ' https://github.com/kingnoel/microverse_portfolio/',
   },
   {
-    mobileTopic: 'multi-post stories',
-    desktopTopic: 'uber navigation',
-    mobileImage: 'img/m4.png',
+    mobileTopic: 'Tonic',
+    desktopTopic: 'Tonic',
+    mobileImage: 'img/1m1.png',
     desktopImage: 'img/fourth.png',
     desktopdesc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry standard dummy text ever since the 1500s,
@@ -100,14 +100,14 @@ function display(main, i) {
         <h2 class="mobile">${main[i].mobileTopic}</h2>
         <h2 class="desktop">${main[i].desktopTopic}</h2>
         <ul>
-          <li class="dark desktop">Uber</li>
+          <li class="dark desktop cl">Uber</li>
           <li class="dark mobile">canopy</li>
           <li class="desktop">full Stack Dev</li>
           <li class="mobile">Back End Dev</li>
           <li class="desktop">2018</li>
           <li class="mobile">2015</li>
         </ul>
-x      </div>
+       </div>
       <div class="image">
         <img src="${main[i].mobileImage}"  class="mobile"/>
         <img src="${main[i].desktopImage}" class="desktop"/>
@@ -123,10 +123,12 @@ x      </div>
         </div>
         <div class="other">
           <ul class="stack">
+            <div class="stt">
             <li>html</li>
             <li>javascript</li>
-            <li class="desktop">ruby </li>
             <li>css</li>
+            </div>
+            <li class="desktop">ruby </li>
             <li class="desktop">github</li>
             <li class="desktop">bootstrap</li>
           </ul>

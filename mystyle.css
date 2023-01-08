@@ -127,10 +127,14 @@ p {
   display: flex;
   flex-direction: column;
 }
-
+.top li{
+  margin-right: 10px;
+  list-style: none;
+}
 .popup .content .top h2 {
   font-size: 28px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .content .top,
@@ -151,6 +155,7 @@ p {
 
 .top ul .desktop {
   display: list-item;
+  display: none;
 }
 
 .popup .content .top {
@@ -592,6 +597,7 @@ For small, less significant text and placeholders.
 
 .desktop {
   display: none;
+  margin-right: 10px;
 }
 
 /* popup */
@@ -645,6 +651,119 @@ For small, less significant text and placeholders.
 }
 
 
+.btn {
+  margin: 0.7rem 0;
+  color: #396df2;
+  outline: none;
+  background: transparent;
+  font-size: 17px;
+  padding: 5px;
+  border: 1px solid #396df2;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s linear;
+}
+.cl{
+  display: none;
+}
+
+
+/* ---------------------------------------------------accessibility features ------------------------------------------------------------------------------ */
+label {
+  display: none;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+
+/* popup */
+.popup .image img:hover {
+  transform: none;
+}
+.popup .content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  margin: 0 auto;
+}
+.popup .content .top {
+  margin: 5px 0;
+}
+.content .bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.content .bottom ul {
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+.bottom .words {
+  width: 100%;
+}
+
+.bottom .other {
+  width: 33%;
+}
+
+.button a {
+  padding: 5px 25px;
+  font-size: 12px;
+  margin: 5px;
+  width: 100%;
+  margin: 5px 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.bottom .other {
+  width: 33%;
+}
+
+.popup .stack li {
+  font-size: 12px;
+  padding: 4px 12px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.popup .stack li {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+
+.project .dark {
+  font-size: 18px;
+}
+
+.content ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5 rem;
+}
+
+.stt {
+  display: flex;
+}
 /* media */
 @media (min-width: 768px) {
   .headclass {
@@ -777,6 +896,9 @@ For small, less significant text and placeholders.
     display: block;
     list-style: none;
   }
+  .top ul .desktop {
+    display: block;
+}
 
   .overflow {
     overflow-wrap: break-word;
@@ -824,90 +946,54 @@ For small, less significant text and placeholders.
   .nav-menu.active {
     left: 0;
   }
-}
 
-/* ---------------------------------------------------accessibility features ------------------------------------------------------------------------------ */
-label {
-  display: none;
+  .popup .content .image img {
+    width: 100%;
+  }
+  .popup .image img:hover {
+    transform: none;
+  }
+  .popup .content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    margin: 0 auto;
+  }
+  .popup .content .top {
+    margin: 5px 0;
+  }
+  .content .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    flex-direction: row;
+  }
+  .content .bottom ul {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    border-radius: 8px;
+    padding-bottom: 10px;
+  }
+  .bottom .words {
+    width: 65%;
+  }
+  .button a {
+    padding: 5px;
+    font-size: 12px;
+    margin: 5px;
+    width: 100%;
 }
-
-.skip {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+  .bottom .other {
+    width: 33%;
+  }
+  .popup .stack li {
+    font-size: 12px;
+    padding: 4px 12px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  .bottom .words {
+    width: 65%;
 }
-
-.skip:focus {
-  position: static;
-  width: auto;
-  height: auto;
-}
-
-
-/* popup */
-.popup .image img:hover {
-  transform: none;
-}
-.popup .content {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  height: 90vh;
-  margin: 0 auto;
-}
-.popup .content .top {
-  margin: 5px 0;
-}
-.content .bottom {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-.content .bottom ul {
-  flex-wrap: wrap;
-  margin-bottom: 0;
-  border-radius: 8px;
-  padding-bottom: 10px;
-}
-.bottom .words {
-  width: 65%;
-}
-
-.bottom .other {
-  width: 33%;
-}
-
-.button a {
-  padding: 5px;
-  font-size: 12px;
-  margin: 5px;
-  width: 100%;
-}
-.bottom .other {
-  width: 33%;
-}
-.popup .stack li {
-  font-size: 12px;
-  padding: 4px 12px;
-  margin-right: 3px;
-  margin-bottom: 5px;
-}
-
-.popup .stack li {
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-
-.project .dark {
-  font-size: 18px;
-}
-
-.content ul {
-  display: flex;
-  align-items: center;
-  gap: 1.5 rem;
 }
