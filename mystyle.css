@@ -159,20 +159,6 @@ p {
   margin-bottom: 1rem;
 }
 
-.top ul {
-  display: flex;
-}
-
-.desktop {
-  display: none;
-  margin-right: 10px;
-}
-
-.top ul .desktop {
-  display: list-item;
-  display: none;
-}
-
 .popup .content .top {
   margin: 5px 0;
 }
@@ -290,11 +276,6 @@ For small, less significant text and placeholders.
 .navlink li a {
   text-decoration: none;
   color: white;
-}
-
-.show {
-  display: block;
-  right: 0;
 }
 
 .connect {
@@ -566,8 +547,6 @@ For small, less significant text and placeholders.
   font-family: 'Poppins', sans-serif;
 }
 
-
-
 .contactsession input,
 .contactsession textarea {
   width: 100%;
@@ -615,7 +594,10 @@ For small, less significant text and placeholders.
   background-color: white;
 }
 
-
+.desktop {
+  display: none;
+  margin-right: 10px;
+}
 
 /* popup */
 .popup {
@@ -633,16 +615,21 @@ For small, less significant text and placeholders.
   transition: 0.5s all;
 }
 
+.show {
+  right: 0;
+  display: block;
+}
+
 .popup .content {
   background-color: white;
-  height: 95vh;
-  padding: 0.8rem;
-  position: relative;
-  border-radius: 10px;
   width: 90%;
   display: flex;
   flex-direction: column;
+  height: 90vh;
   margin: 0 auto;
+  padding: 0.8rem;
+  position: relative;
+  border-radius: 10px;
 }
 
 .popup .content .image {
@@ -671,6 +658,10 @@ For small, less significant text and placeholders.
   border-top: 1px solid #ebecf0;
 }
 
+.content ul {
+  display: flex;
+}
+
 .conditions {
   display: none;
   text-align: left;
@@ -694,7 +685,6 @@ For small, less significant text and placeholders.
   display: none;
 }
 
-
 /* ---------------------------------------------------accessibility features ------------------------------------------------------------------------------ */
 label {
   display: none;
@@ -714,7 +704,6 @@ label {
   width: auto;
   height: auto;
 }
-
 
 /* popup */
 .popup .image img:hover {
@@ -752,6 +741,11 @@ label {
 
 .project .dark {
   font-size: 18px;
+}
+
+.top ul .desktop {
+  display: list-item;
+  display: none;
 }
 
 .stt {
@@ -983,17 +977,15 @@ label {
     flex-direction: row;
   }
 
-  .content ul {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
   .content .bottom ul {
     flex-wrap: wrap;
     margin-bottom: 0;
     border-radius: 8px;
     padding-bottom: 10px;
+  }
+
+  .bottom .words {
+    width: 65%;
   }
 
   .bottom .other {
@@ -1005,9 +997,5 @@ label {
     padding: 4px 12px;
     margin-right: 3px;
     margin-bottom: 5px;
-  }
-
-  .bottom .words {
-    width: 65%;
   }
 }
